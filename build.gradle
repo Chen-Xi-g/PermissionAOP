@@ -1,0 +1,29 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+  repositories {
+    google()
+    jcenter()
+  }
+  dependencies {
+    classpath "com.android.tools.build:gradle:4.0.1"
+    /*
+        如果出现这个错误
+        Cannot cast object 'com.android.build.gradle.internal.pipeline.TransformTask$2$1@590ffd3a' with class 'com.android.build.gradle.internal.pipeline.TransformTask$2$1' to class 'com.android.build.gradle.internal.pipeline.TransformTask'
+        更新aspectjx版本
+     */
+    classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.10'
+    // NOTE: Do not place your application dependencies here; they belong
+    // in the individual module build.gradle files
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+    jcenter()
+  }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}

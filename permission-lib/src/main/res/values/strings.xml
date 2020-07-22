@@ -1,0 +1,21 @@
+<resources>
+  <string name="app_name">permission-lib</string>
+
+<!-- Permission Rationale -->
+  <string name="permission_rationale">我们需要您确认许可请求</string>
+  <string name="read_external_storage_permission_rationale">允许应用程序从外部存储读取</string>
+  <string name="write_external_storage_permission_rationale">允许应用程序写入外部存储</string>
+  <string name="camera_permission_rationale">访问摄像头设备</string>
+  <string name="read_phone_state_permission_rationale">允许以只读方式访问电话状态，包括当前的蜂窝网络信息，所有正在进行的呼叫的状态以及PhoneAccount在设备上注册的所有电话的列表。</string>
+  <string name="call_phone_permission_rationale">允许应用程序在不通过Dialer用户界面的情况下发起电话呼叫，以使用户确认呼叫。</string>
+
+
+  <!-- Permission Reject -->
+  <string name="permission_reject">转到设置允许权限</string>
+  <string name="read_external_storage_permission_reject">转到设置允许应用程序从外部存储读取</string>
+  <string name="write_external_storage_permission_reject">转到设置允许应用程序写入外部存储</string>
+  <string name="camera_permission_reject">转到设置访问摄像头设备</string>
+  <string name="read_phone_state_permission_reject">转到设置允许以只读方式访问电话状态，包括当前的蜂窝网络信息，所有正在进行的呼叫的状态以及PhoneAccount在设备上注册的所有电话的列表。</string>
+  <string name="call_phone_permission_reject">转到设置允许应用程序在不通过Dialer用户界面的情况下发起电话呼叫，以使用户确认呼叫。</string>
+
+</resources>

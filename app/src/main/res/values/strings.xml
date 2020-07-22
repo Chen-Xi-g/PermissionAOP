@@ -1,0 +1,18 @@
+<resources>
+  <string name="app_name">PermissionAOP</string>
+  <string name="setting">设置</string>
+
+  <!-- Preference Titles -->
+  <string name="single_header">单权限申请</string>
+  <string name="more_header">多权限申请</string>
+
+  <!-- Single Permission Preferences -->
+  <string name="storage_title">存储权限</string>
+  <string name="camera_title">相机权限</string>
+  <string name="camera_summary_off">请先同意存储权限</string>
+  <string name="camera_summary_on">申请相机权限</string>
+
+  <!-- More Permission Preferences -->
+  <string name="phone_title">申请手机相关权限</string>
+  <string name="phone_summary">READ_PHONE_STATE、CALL_PHONE、READ_CALL_LOG、WRITE_CALL_LOG</string>
+</resources>

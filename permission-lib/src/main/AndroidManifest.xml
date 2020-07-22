@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.isunland.permission_lib">
+
+  <application>
+    <activity
+        android:name=".permission.PermissionActivity"
+        android:theme="@style/Translucent" />
+  </application>
+</manifest>
