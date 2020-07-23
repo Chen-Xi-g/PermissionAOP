@@ -194,7 +194,7 @@
 
  **QQ:** 1217056667
 
- **WeChat：**Alvin-_-G
+ **WeChat：** Alvin-_-G
 
  **邮箱(Email):** a912816369@gmail.com
 
