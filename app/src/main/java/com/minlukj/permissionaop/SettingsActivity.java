@@ -13,6 +13,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import com.isunland.permission_lib.permission.Permission;
 import com.isunland.permission_lib.permission.PermissionUtil;
+import com.isunland.permission_lib.single.SingleClick;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -21,6 +22,8 @@ public class SettingsActivity extends AppCompatActivity {
   private TextView mTvPhone;
 
   private View.OnClickListener mOnClickListener = new View.OnClickListener() {
+    //@SingleClick(2000) 自定义间隔时间，默认1000ms
+    @SingleClick
     @Override public void onClick(View v) {
       if (v == mTvStorage){
         getStorage();
