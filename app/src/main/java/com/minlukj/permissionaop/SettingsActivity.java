@@ -23,13 +23,12 @@ public class SettingsActivity extends AppCompatActivity {
 
   private View.OnClickListener mOnClickListener = new View.OnClickListener() {
     //@SingleClick(2000) 自定义间隔时间，默认1000ms
-    @SingleClick
-    @Override public void onClick(View v) {
-      if (v == mTvStorage){
+    @SingleClick @Override public void onClick(View v) {
+      if (v == mTvStorage) {
         getStorage();
-      }else if (v == mTvCamera){
+      } else if (v == mTvCamera) {
         getCamera();
-      }else if (v == mTvPhone){
+      } else if (v == mTvPhone) {
         getPhone();
       }
     }
@@ -45,26 +44,28 @@ public class SettingsActivity extends AppCompatActivity {
     permissionInit();
 
     onClickInit();
-
   }
 
-  @Permission(permissions = { Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.WRITE_EXTERNAL_STORAGE },
-      rationales = { PermissionUtil.READ_EXTERNAL_STORAGE_RATIONALE,PermissionUtil.WRITE_EXTERNAL_STORAGE_RATIONALE },
-      rejects = {PermissionUtil.READ_EXTERNAL_STORAGE_REJECT, PermissionUtil.WRITE_EXTERNAL_STORAGE_REJECT })
-  private void getStorage(){
+  @Permission(permissions = {
+      Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE
+  }, rationales = {
+      PermissionUtil.READ_EXTERNAL_STORAGE_RATIONALE, PermissionUtil.WRITE_EXTERNAL_STORAGE_RATIONALE
+  }, rejects = { PermissionUtil.READ_EXTERNAL_STORAGE_REJECT, PermissionUtil.WRITE_EXTERNAL_STORAGE_REJECT })
+  private void getStorage() {
     //只有获取全部权限才会执行
-    Toast.makeText(this,"获取存储权限成功",Toast.LENGTH_LONG).show();
+    Toast.makeText(this, "获取存储权限成功", Toast.LENGTH_LONG).show();
   }
 
-  @Permission(permissions = Manifest.permission.CAMERA , rationales = PermissionUtil.CAMERA_RATIONALE, rejects = PermissionUtil.CAMERA_REJECT )
-  private void getCamera(){
-    Toast.makeText(this,"获取相机权限成功",Toast.LENGTH_LONG).show();
+  @Permission(permissions = Manifest.permission.CAMERA, rationales = PermissionUtil.CAMERA_RATIONALE, rejects = PermissionUtil.CAMERA_REJECT)
+  private void getCamera() {
+    Toast.makeText(this, "获取相机权限成功", Toast.LENGTH_LONG).show();
   }
 
-  @Permission(permissions = {Manifest.permission.READ_PHONE_STATE, Manifest.permission.CALL_PHONE, Manifest.permission.READ_CALL_LOG,
-      Manifest.permission.WRITE_CALL_LOG})
-  private void getPhone(){
-    Toast.makeText(this,"获取手机组权限成功",Toast.LENGTH_LONG).show();
+  @Permission(permissions = {
+      Manifest.permission.READ_PHONE_STATE, Manifest.permission.CALL_PHONE, Manifest.permission.READ_CALL_LOG,
+      Manifest.permission.WRITE_CALL_LOG
+  }) private void getPhone() {
+    Toast.makeText(this, "获取手机组权限成功", Toast.LENGTH_LONG).show();
   }
 
   private void onClickInit() {
