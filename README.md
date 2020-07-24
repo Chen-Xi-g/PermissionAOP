@@ -190,13 +190,41 @@
 
 <img src="http://www.minlukj.com/wp-content/uploads/2020/07/permission-rejects.png" alt="图3" style="zoom:50%;" />
 
+# 避免点击事件重复
+
+> 总有一些奇怪的用户会进行一些奇怪的操作，一个按钮点十几次，一个请求点十几次，对于这样的操作也是见怪不怪了。
+>
+> 如果我们每个控件都设置的话会非常复杂，还有一个办法就是自定义控件，为了解决这个问题，我用AOP切面编程写了一个防止重复点击的控件，只需要在事件方法上添加@SingleClick就可以避免。默认时间为1000ms，你可以自己传入毫秒来限制。
+
+## 一、导入
+
+查看权限申请导入
+
+## 二、使用
+
+1. 在OnClickListener点击事件添加@SingleClick，默认1000ms。
+
+   ```java
+   private View.OnClickListener mOnClickListener = new View.OnClickListener() {
+       //@SingleClick(2000) 传入自定义毫秒
+       @SingleClick
+       @Override public void onClick(View v) {
+         
+       }
+     };
+   ```
+
+   
+
  ### 如何联系我(How to contact me)
 
  **QQ:** 1217056667
 
- **WeChat：** Alvin-_-G
+ **WeChat：**Alvin-_-G
 
  **邮箱(Email):** a912816369@gmail.com
+
+ **GitHub：**https://github.com/Chen-Xi-g
 
  **小站:** www.minlukj.com
 
