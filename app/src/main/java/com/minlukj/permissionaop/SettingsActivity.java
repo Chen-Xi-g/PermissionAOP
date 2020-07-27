@@ -11,9 +11,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import com.isunland.permission_lib.permission.Permission;
-import com.isunland.permission_lib.permission.PermissionUtil;
-import com.isunland.permission_lib.single.SingleClick;
+import com.minlukj.permission_lib.permission.Permission;
+import com.minlukj.permission_lib.permission.PermissionUtil;
+import com.minlukj.permission_lib.single.SingleClick;
 
 public class SettingsActivity extends AppCompatActivity {
 

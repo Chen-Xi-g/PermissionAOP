@@ -1,4 +1,4 @@
-package com.isunland.permission_lib.permission;
+package com.minlukj.permission_lib.permission;
 
 /**
  * 权限申请的回调类

@@ -1,4 +1,4 @@
-package com.isunland.permission_lib.single;
+package com.minlukj.permission_lib.single;
 
 import android.view.View;
 

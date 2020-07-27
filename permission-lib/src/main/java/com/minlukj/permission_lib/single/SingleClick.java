@@ -1,4 +1,4 @@
-package com.isunland.permission_lib.single;
+package com.minlukj.permission_lib.single;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

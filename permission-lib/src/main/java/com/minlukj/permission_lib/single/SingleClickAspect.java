@@ -1,4 +1,4 @@
-package com.isunland.permission_lib.single;
+package com.minlukj.permission_lib.single;
 
 import android.view.View;
 import java.lang.reflect.Method;
@@ -14,7 +14,7 @@ import org.aspectj.lang.reflect.MethodSignature;
   /**
    * 定义切点，标记切点为所有被@SingleClick注解的方法
    */
-  @Pointcut("execution(@com.isunland.permission_lib.single.SingleClick * *(..))") public void methodAnnotated() {
+  @Pointcut("execution(@com.minlukj.permission_lib.single.SingleClick * *(..))") public void methodAnnotated() {
   }
 
   /**

@@ -1,4 +1,4 @@
-package com.isunland.permission_lib.permission;
+package com.minlukj.permission_lib.permission;
 
 import android.app.Activity;
 import android.app.ListFragment;
@@ -24,7 +24,7 @@ import org.aspectj.lang.reflect.MethodSignature;
   /**
    * 定义一个切面方法
    */
-  @Around("execution(@com.isunland.permission_lib.permission.Permission * *(..))") public void aroundJoinPoint(
+  @Around("execution(@com.minlukj.permission_lib.permission.Permission * *(..))") public void aroundJoinPoint(
       final ProceedingJoinPoint joinPoint) {
     try {
       // 获取方法注解

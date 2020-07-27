@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.isunland.permission_lib">
+    package="com.minlukj.permission_lib">
 
   <application>
     <activity
