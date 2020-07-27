@@ -220,11 +220,11 @@
 
  **QQ:** 1217056667
 
- **WeChat：**Alvin-_-G
+ **WeChat：** Alvin-_-G
 
  **邮箱(Email):** a912816369@gmail.com
 
- **GitHub：**https://github.com/Chen-Xi-g
+ **GitHub：** https://github.com/Chen-Xi-g
 
  **小站:** www.minlukj.com
 
